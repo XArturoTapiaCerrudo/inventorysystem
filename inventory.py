@@ -1,5 +1,26 @@
+import json
+import os
+
+
+INVENTORY_FILE = "inventory.json"
+
+def load_inventory():
+
+    with open(INVENTORY_FILE, "r") as f:
+        data = json.load(f)
+
+        if not isinstance(data, list):
+            print("JSON format incorrect. Resetting inventory.")
+            return []
+        
+        return data
+
+def save_inventory():
+    with open(INVENTORY_FILE, "w") as f:
+        json.dump(inventory, f, indent=4)
+
 # Step 1: Create a list to store all items
-inventory = []
+inventory = load_inventory()
 
 # Step 2: Function to add a new item
 def add_item():
@@ -14,6 +35,7 @@ def add_item():
     }
 
     inventory.append(item)
+    save_inventory
     print(f"✅ Item '{name}' added successfully!\n")
 
 # Step 3: Function to view all items
@@ -35,6 +57,7 @@ def delete_item():
             print(f"🗑️ Item '{item['name']}' deleted successfully!\n")
             return
     print("❌ Item not found.\n")
+    save_inventory()
 
 # Step 5: Main menu
 def main_menu():
