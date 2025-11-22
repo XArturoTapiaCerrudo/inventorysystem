@@ -1,0 +1,72 @@
+[
+    {
+        "id": "L001",
+        "name": "Dell Latitude Laptop",
+        "status": "available"
+    },
+    {
+        "id": "L002",
+        "name": "HP Spectre Laptop",
+        "status": "borrowed"
+    },
+    {
+        "id": "T001",
+        "name": "Samsung 42 Inch TV",
+        "status": "available"
+    },
+    {
+        "id": "T002",
+        "name": "LG Smart TV 55 Inch",
+        "status": "borrowed"
+    },
+    {
+        "id": "C001",
+        "name": "Office Chair Black",
+        "status": "available"
+    },
+    {
+        "id": "C002",
+        "name": "Meeting Room Chair Blue",
+        "status": "available"
+    },
+    {
+        "id": "M001",
+        "name": "Logitech Wireless Mouse",
+        "status": "borrowed"
+    },
+    {
+        "id": "M002",
+        "name": "Dell Optical Mouse",
+        "status": "available"
+    },
+    {
+        "id": "P001",
+        "name": "HB Pencil Pack",
+        "status": "available"
+    },
+    {
+        "id": "P002",
+        "name": "2B Drawing Pencil",
+        "status": "borrowed"
+    },
+    {
+        "id": "N001",
+        "name": "Blue Ballpoint Pen",
+        "status": "available"
+    },
+    {
+        "id": "N002",
+        "name": "Black Gel Pen",
+        "status": "borrowed"
+    },
+    {
+        "id": "3D01",
+        "name": "Creality Ender 3D Printer",
+        "status": "available"
+    },
+    {
+        "id": "3D02",
+        "name": "Prusa i3 3D Printer",
+        "status": "borrowed"
+    }
+]
